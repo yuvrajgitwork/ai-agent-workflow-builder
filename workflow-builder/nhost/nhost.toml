@@ -10,7 +10,7 @@ adminSecret = '{{ secrets.HASURA_GRAPHQL_ADMIN_SECRET }}'
 
 [[hasura.jwtSecrets]]
 type = 'HS256'
-key = '{{ secrets.HASURA_GRAPHQL_JWT_SECRET }}'
+key = 'nhost-super-secret-jwt-key-for-hasura-auth-and-dashboard'
 
 [hasura.settings]
 enableRemoteSchemaPermissions = false
