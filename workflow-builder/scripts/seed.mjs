@@ -58,10 +58,10 @@ async function signUpOrFetch(email) {
   // Force emailVerified = true so the demo doesn't get blocked on email verification.
   // (hasura-auth's Postgres schema uses camelCase column names directly, so this is not
   // a GraphQL naming-convention transform.)
-  await adminGraphQL(
-    `mutation ($id: uuid!) { update_users_by_pk(pk_columns: { id: $id }, _set: { emailVerified: true }) { id } }`,
-    { id: userId }
-  );
+  //await adminGraphQL(
+  //  `mutation ($id: uuid!) { update_users_by_pk(pk_columns: { id: $id }, _set: { emailVerified: true }) { id } }`,
+  //  { id: userId }
+  //);
 
   return userId;
 }
