@@ -1,0 +1,26 @@
+# Reference type definitions for the three Hasura Actions used by this project.
+# Paste the relevant block into Hasura Console -> Actions -> Create -> "Action Definition"
+# (and the matching bit into "Type Definitions" if the console splits them out).
+# See CHECKLIST.md for exact handler URLs, permissions, and header instructions.
+
+type Mutation {
+  triggerWorkflowRun(workflow_id: uuid!, initial_input: json): TriggerWorkflowRunOutput
+}
+
+type Mutation {
+  approveStep(step_run_id: uuid!, approve: Boolean): ApproveStepOutput
+}
+
+type Mutation {
+  triggerWorkflowRunWebhook(workflow_id: uuid!, secret: String!, payload: json): TriggerWorkflowRunOutput
+}
+
+type TriggerWorkflowRunOutput {
+  run_id: uuid!
+  status: String!
+}
+
+type ApproveStepOutput {
+  run_id: uuid!
+  status: String!
+}

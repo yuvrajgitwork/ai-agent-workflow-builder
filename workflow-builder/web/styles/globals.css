@@ -1,0 +1,94 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: 860px; margin: 0 auto; padding: 24px 16px 80px; }
+.page-center { display: flex; align-items: center; justify-content: center; height: 60vh; color: #64748b; }
+
+.nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 24px; background: white; border-bottom: 1px solid #e2e8f0;
+}
+.nav-brand { font-weight: 700; font-size: 18px; color: #0f172a; }
+.nav-right { display: flex; align-items: center; gap: 14px; }
+.nav-user { color: #64748b; font-size: 14px; }
+
+.card {
+  background: white; border: 1px solid #e2e8f0; border-radius: 10px;
+  padding: 20px; margin-bottom: 16px;
+}
+.card-narrow { max-width: 380px; margin: 60px auto; }
+.step-card { background: #f8fafc; }
+
+h1 { font-size: 22px; margin: 8px 0 4px; }
+h2 { font-size: 17px; margin-top: 28px; }
+h3 { font-size: 15px; }
+.muted { color: #64748b; }
+.small { font-size: 13px; }
+.error { color: #dc2626; font-size: 14px; }
+.notice { color: #0369a1; font-size: 14px; }
+
+form label { display: block; font-size: 13px; font-weight: 600; margin: 12px 0 4px; color: #334155; }
+form input, form select, form textarea {
+  width: 100%; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px;
+  font-family: inherit;
+}
+form textarea { font-family: ui-monospace, monospace; font-size: 13px; }
+.checkbox-label { display: flex; align-items: center; gap: 8px; font-weight: 400; margin: 8px 0; }
+.checkbox-label input { width: auto; }
+
+.btn {
+  display: inline-block; padding: 9px 16px; border-radius: 6px; border: none;
+  font-size: 14px; font-weight: 600; cursor: pointer; margin-top: 14px; margin-right: 8px;
+}
+.btn-primary { background: #2563eb; color: white; }
+.btn-primary:disabled { background: #93c5fd; cursor: not-allowed; }
+.btn-secondary { background: #e2e8f0; color: #0f172a; }
+.btn-ghost { background: transparent; color: #334155; padding: 6px 10px; margin-top: 0; }
+
+.row-between { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 10px 0; }
+
+.org-switcher { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip {
+  border: 1px solid #cbd5e1; background: white; border-radius: 999px; padding: 6px 14px;
+  cursor: pointer; font-size: 13px;
+}
+.chip-active { background: #0f172a; color: white; border-color: #0f172a; }
+.chip-role { opacity: 0.7; margin-left: 6px; font-size: 11px; text-transform: uppercase; }
+
+.quota-card { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.quota-bar { width: 260px; height: 8px; background: #e2e8f0; border-radius: 4px; margin-top: 6px; overflow: hidden; }
+.quota-bar-fill { height: 100%; }
+.quota-meta { display: flex; gap: 16px; font-size: 13px; color: #64748b; }
+
+.wf-list { display: flex; flex-direction: column; gap: 10px; }
+.wf-item {
+  display: flex; justify-content: space-between; align-items: center;
+  background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px 16px; color: inherit;
+}
+.wf-item:hover { border-color: #2563eb; text-decoration: none; }
+
+.badge { color: white; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+.badge-muted { background: #cbd5e1 !important; color: #334155; }
+
+.step-list { list-style: none; padding: 0; }
+.step-list li {
+  background: white; border: 1px solid #e2e8f0; border-radius: 8px;
+  padding: 12px 14px; margin-bottom: 10px;
+}
+.step-list pre { background: #f1f5f9; padding: 8px; border-radius: 6px; font-size: 12px; overflow-x: auto; }
+
+.approval-box {
+  margin-top: 10px; padding: 10px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px;
+}
+
+.run-list { list-style: none; padding: 0; }
+.run-list li { padding: 6px 0; border-bottom: 1px solid #e2e8f0; }
+
+.curl { background: #0f172a; color: #e2e8f0; padding: 12px; border-radius: 6px; overflow-x: auto; font-size: 12px; white-space: pre-wrap; word-break: break-all; }

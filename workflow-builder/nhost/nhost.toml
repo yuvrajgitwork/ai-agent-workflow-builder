@@ -1,0 +1,29 @@
+# Optional: only needed if you choose to run this project locally via the Nhost CLI
+# (`nhost up`, requires Docker). The primary, recommended path in CHECKLIST.md uses a
+# Nhost Cloud project + the Hasura Console directly and does not require this file.
+
+[global]
+[hasura]
+version = 'v2.36.0'
+adminSecret = '{{ secrets.HASURA_GRAPHQL_ADMIN_SECRET }}'
+
+[hasura.settings]
+enableRemoteSchemaPermissions = false
+
+[auth]
+version = '0.24.0'
+
+[auth.method.emailPassword]
+hibpEnabled = false
+
+[auth.signUp]
+enabled = true
+
+[postgres]
+version = '14.6-20230406-1'
+
+[provider]
+
+[functions]
+[functions.node]
+version = 18

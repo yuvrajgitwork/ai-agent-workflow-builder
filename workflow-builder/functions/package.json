@@ -1,0 +1,9 @@
+{
+  "name": "workflow-builder-functions",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Nhost Serverless Functions: Hasura Action handlers + Event/Cron Trigger webhooks for the AI Agent Workflow Builder.",
+  "engines": {
+    "node": ">=18"
+  }
+}
