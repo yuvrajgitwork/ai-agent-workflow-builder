@@ -3,9 +3,14 @@
 # Nhost Cloud project + the Hasura Console directly and does not require this file.
 
 [global]
+
 [hasura]
 version = 'v2.36.0'
 adminSecret = '{{ secrets.HASURA_GRAPHQL_ADMIN_SECRET }}'
+
+[[hasura.jwtSecrets]]
+type = 'HS256'
+key = '{{ secrets.HASURA_GRAPHQL_JWT_SECRET }}'
 
 [hasura.settings]
 enableRemoteSchemaPermissions = false
